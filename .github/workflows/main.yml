@@ -78,17 +78,14 @@ spec:
   - host: api-kutty-k8s-local-0503td-9b370c95520e4a78.elb.ap-south-1.amazonaws.com
     http:
       paths:
-      - path: /
+      - path: /nginx
         pathType: Prefix
         backend:
           service:
             name: nginx-service
             port:
               number: 80
-  - host: api-kutty-k8s-local-0503td-9b370c95520e4a78.elb.ap-south-1.amazonaws.com
-    http:
-      paths:
-      - path: /
+      - path: /httpd
         pathType: Prefix
         backend:
           service:

@@ -75,7 +75,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: api-kutty-k8s-local-0503td-9b370c95520e4a78.elb.ap-south-1.amazonaws.com
+  - host: ada9d13179b1240dc884073ce5a26226-12665742.ap-south-1.elb.amazonaws.com
     http:
       paths:
       - path: /nginx

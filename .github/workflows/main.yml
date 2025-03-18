@@ -2,8 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
-  labels:
-    app: my-app
 spec:
   replicas: 2
   selector:
@@ -38,8 +36,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: httpd-deployment
-  labels:
-    app: my-app1
 spec:
   replicas: 2
   selector:
